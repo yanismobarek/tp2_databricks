@@ -1,0 +1,4 @@
+spark:
+  app_name: SalesPipeline
+  shuffle_partitions: 200
+

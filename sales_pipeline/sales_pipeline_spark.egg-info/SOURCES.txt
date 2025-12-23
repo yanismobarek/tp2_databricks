@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+sales_pipeline/init.py
+sales_pipeline/bronze/ingestion.py
+sales_pipeline/gold/aggregation.py
+sales_pipeline/silver/cleaning.py
+sales_pipeline/utils/spark_session.py
+sales_pipeline_spark.egg-info/PKG-INFO
+sales_pipeline_spark.egg-info/SOURCES.txt
+sales_pipeline_spark.egg-info/dependency_links.txt
+sales_pipeline_spark.egg-info/requires.txt
+sales_pipeline_spark.egg-info/top_level.txt
+tests/test_aggregation.py
+tests/test_cleaning.py
+tests/test_ingestion.py

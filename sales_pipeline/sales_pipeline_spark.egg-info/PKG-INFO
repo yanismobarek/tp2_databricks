@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: sales-pipeline-spark
+Version: 0.1.0
+Summary: Pipeline ETL Spark pour l'analyse des ventes.
+Keywords: spark,pyspark,etl,databricks
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: pytest>=7.0
+
+# Sales Pipeline Project
+
+## 📌 But du projet
+Ce projet implémente un **pipeline ETL** pour les ventes de boutiques à Paris.  
+Le pipeline suit les étapes classiques **Bronze → Silver → Gold** :
+
+- **Bronze** : ingestion des fichiers CSV bruts dans une table Delta.  
+- **Silver** : nettoyage et standardisation des données (suppression des valeurs nulles, types corrects, etc.).  
+- **Gold** : agrégation et calcul des indicateurs clés (ex : ventes par produit, chiffre d’affaires total).  
+
+---
+
+## ⚙️ Comment exécuter le pipeline
+
+1. Assurez-vous d’avoir un environnement Python avec les dépendances du projet :  
+
+```
+pip install -r requirements.txt```
+
+Lancez le pipeline principal :
+
+```
+python main.py```
+
+Le pipeline va exécuter les étapes dans l’ordre :
+
+Ingestion (Bronze)
+
+Nettoyage (Silver)
+
+Agrégation (Gold)
+
+Les résultats Gold seront affichés dans la console et sauvegardés dans des tables Delta
